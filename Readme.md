@@ -6,9 +6,9 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [DomainObject1.cs](./CS/DXExample.Module/DomainObject1.cs) (VB: [DomainObject1.vb](./VB/DXExample.Module/DomainObject1.vb))
-* **[Module.cs](./CS/DXExample.Module/Module.cs) (VB: [Module.vb](./VB/DXExample.Module/Module.vb))**
-* [RemoveFromViewInfoAttribute.cs](./CS/DXExample.Module/RemoveFromViewInfoAttribute.cs) (VB: [RemoveFromViewInfoAttribute.vb](./VB/DXExample.Module/RemoveFromViewInfoAttribute.vb))
+- [Contact.cs](CS/CustomAttributeSolution/CustomAttributeSolution.Module/BusinessObjects/Contact.cs)
+- **[Module.cs](CS/CustomAttributeSolution/CustomAttributeSolution.Module/Module.cs)**
+- [RemoveFromViewInfoAttribute.cs](CS/CustomAttributeSolution/CustomAttributeSolution.Module/RemoveFromViewInfoAttribute.cs)
 <!-- default file list end -->
 # How to implement a custom attribute to customize the Application Model
 
