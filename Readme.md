@@ -10,9 +10,9 @@ In this case, the properties marked with this attribute are removed from views.
 
 ## Implementation Details
 
-To implement this functionality, the `IModelMember` interface is extended with the `IRemovedFromViewInfo` interface that contains a single property - `IsRemovedFromViewInfo`. The value of this property is calculated based on the value of the custom attribute we created (`RemoveFromViewInfoAttribute`) and applied to the persistent class. This is done via the domain logic (`RemovedFromViewInfoLogic`). The `IRemovedFromViewInfo.IsRemovedFromViewInfo` property is used by the model node generator updater (`ViewsNodesGeneratorUpdater`) to remove certain view items and columns from detail and list views. 
+To implement this functionality, the `IModelMember` interface is extended with the `IRemovedFromViewInfo` interface that contains the `IsRemovedFromViewInfo` property. The value of this property is calculated based on the value of the custom attribute we created (`RemoveFromViewInfoAttribute`) and applied to the persistent class via the domain logic (`RemovedFromViewInfoLogic`). The `IRemovedFromViewInfo.IsRemovedFromViewInfo` property is used by the model node generator updater (`ViewsNodesGeneratorUpdater`) to remove certain view items and columns from detail and list views. 
 
-Thus, the example demonstrates three techniques: extension of the application model with additional properties, definition of default model values via domain logic, and modification of the default model via the model node generator updater.
+This example demonstrates three techniques: how to extend the application model with additional properties, define default model values via domain logic, and modify the default model via the model node generator updater.
 
 ## Files to Review
 
