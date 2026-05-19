@@ -18,7 +18,6 @@ public class CustomAttributeSolutionWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "CustomAttributeSolution";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += CustomAttributeSolutionWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += CustomAttributeSolutionWindowsFormsApplication_CustomizeLanguagesList;
     }
